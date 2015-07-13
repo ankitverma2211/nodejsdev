@@ -49,8 +49,15 @@ Contact.saveContact(contact, function(err) {
   // once the 'success' message is printed
   // the contact above was appended to data.json
   // among the already existing contacts
-}) */
+})
 
 Contact.findContacts('John Smith',function(err,result){
   console.log(result);
+})*/
+
+
+var Command = require('./command');
+
+Command.add(function(err){
+  console.log('Contact added!')
 })
